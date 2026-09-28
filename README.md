@@ -310,7 +310,7 @@ Possible future improvements include:
 
 ## Author
 
-**Name:** [Your Name]
+**Name:** Parnasha Majumder
 **Course:** Python Essentials
 **Institution:** VIT Bhopal University
 **Project:** SplitWyus
