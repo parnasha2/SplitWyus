@@ -30,36 +30,36 @@ SplitWyus simplifies the process by calculating the net balance of each person a
 
 ## Objectives
 
-* Calculate the net balance of each person in a group.
-* Identify who needs to pay and who needs to receive money.
-* Simplify multiple outstanding debts.
-* Minimize the number of transactions required to settle the group.
-* Provide the results through a simple web interface.
-* Apply Python programming and algorithmic concepts to a practical problem.
-* Use Flask to connect the Python backend with the web interface.
+- Calculate the net balance of each person in a group.
+- Identify who needs to pay and who needs to receive money.
+- Simplify multiple outstanding debts.
+- Minimize the number of transactions required to settle the group.
+- Provide the results through a simple web interface.
+- Apply Python programming and algorithmic concepts to a practical problem.
+- Use Flask to connect the Python backend with the web interface.
 
 ---
 
 ## Features
 
-* Add and process transactions between friends.
-* Calculate the net balance of each participant.
-* Separate participants into debtors and creditors.
-* Generate simplified settlement transactions.
-* Reduce unnecessary transactions.
-* Display the final settlement clearly.
-* Flask-based web interface.
-* Input validation for invalid transaction details.
+- Add and process transactions between friends.
+- Calculate the net balance of each participant.
+- Separate participants into debtors and creditors.
+- Generate simplified settlement transactions.
+- Reduce unnecessary transactions.
+- Display the final settlement clearly.
+- Flask-based web interface.
+- Input validation for invalid transaction details.
 
 ---
 
 ## Technologies Used
 
-* **Python** – Core programming and transaction-settlement logic
-* **Flask** – Web framework and backend
-* **HTML** – Structure of the web interface
-* **CSS** – Styling and layout
-* **Git & GitHub** – Version control and project submission
+- **Python** – Core programming and transaction-settlement logic
+- **Flask** – Web framework and backend
+- **HTML** – Structure of the web interface
+- **CSS** – Styling and layout
+- **Git & GitHub** – Version control and project submission
 
 ---
 
@@ -132,20 +132,20 @@ The process continues until all balances are settled.
 
 The project applies several Python concepts:
 
-* Variables
-* Data types
-* Lists
-* Dictionaries
-* Functions
-* Loops
-* Conditional statements
-* Arithmetic operators
-* Input validation
-* Type conversion
-* String formatting
-* Flask routes
-* Form handling
-* Algorithmic problem solving
+- Variables
+- Data types
+- Lists
+- Dictionaries
+- Functions
+- Loops
+- Conditional statements
+- Arithmetic operators
+- Input validation
+- Type conversion
+- String formatting
+- Flask routes
+- Form handling
+- Algorithmic problem solving
 
 ---
 
@@ -173,11 +173,11 @@ splitwise/
 
 The following are required to run SplitWyus:
 
-* Python 3.x
-* pip
-* Flask
-* Web browser
-* Git (for cloning the repository)
+- Python 3.x
+- pip
+- Flask
+- Web browser
+- Git (for cloning the repository)
 
 ---
 
@@ -258,12 +258,12 @@ Open this address in a web browser to use SplitWyus.
 
 The application should handle invalid inputs such as:
 
-* Empty participant names
-* Invalid transaction amounts
-* Negative or zero transaction values where not allowed
-* Transactions involving unknown participants
-* Incomplete transaction details
-* Invalid number of participants
+- Empty participant names
+- Invalid transaction amounts
+- Negative or zero transaction values where not allowed
+- Transactions involving unknown participants
+- Incomplete transaction details
+- Invalid number of participants
 
 ---
 
@@ -283,11 +283,11 @@ The application should handle invalid inputs such as:
 
 ## Advantages
 
-* Reduces the number of payments required among friends.
-* Avoids manually calculating multiple debts.
-* Makes group expense settlement easier to understand.
-* Automates repetitive calculations.
-* Demonstrates practical use of Python algorithms.
+- Reduces the number of payments required among friends.
+- Avoids manually calculating multiple debts.
+- Makes group expense settlement easier to understand.
+- Automates repetitive calculations.
+- Demonstrates practical use of Python algorithms.
 
 ---
 
@@ -295,15 +295,15 @@ The application should handle invalid inputs such as:
 
 Possible future improvements include:
 
-* Unequal expense splitting
-* Automatic expense categorization
-* Expense history
-* Database storage
-* User accounts
-* Exporting settlement results
-* Sharing settlement results with friends
-* Mobile-friendly interface
-* More advanced transaction-minimization algorithms
+- Unequal expense splitting
+- Automatic expense categorization
+- Expense history
+- Database storage
+- User accounts
+- Exporting settlement results
+- Sharing settlement results with friends
+- Mobile-friendly interface
+- More advanced transaction-minimization algorithms
 
 ---
 
