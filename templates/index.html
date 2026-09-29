@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SplitWise</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>SplitWyus</h1>
+        <p>Cash Flow & Debt Optimization Algorithm</p>
+    </header>
+
+    <!-- STEP 1: GROUP MEMBERS -->
+    <div class="section-box">
+        <h2>👥 1. Group Setup</h2>
+        <div class="form-group" style="max-width: 250px;">
+            <label for="numPeople">Number of People (Max 6):</label>
+            <select id="numPeople" onchange="onPeopleCountChange()">
+                <option value="2">2 People</option>
+                <option value="3" selected>3 People</option>
+                <option value="4">4 People</option>
+                <option value="5">5 People</option>
+                <option value="6">6 People</option>
+            </select>
+        </div>
+
+        <div class="grid-3" id="namesContainer">
+            
+        </div>
+    </div>
+
+    <!-- STEP 2: ENTER TRANSACTIONS -->
+    <div class="section-box">
+        <h2>💳 2. Add Expenses</h2>
+        <form onsubmit="addTransaction(event)">
+            <div class="grid-3">
+                <div class="form-group">
+                    <label for="descInput">Description:</label>
+                    <input type="text" id="descInput" placeholder="e.g. Dinner, Snacks" required />
+                </div>
+                <div class="form-group">
+                    <label for="payerSelect">Paid By:</label>
+                    <select id="payerSelect">
+                        
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="amountInput">Amount (₹):</label>
+                    <input type="number" id="amountInput" placeholder="0.00" step="0.01" min="0.01" required />
+                </div>
+            </div>
+            <button type="submit" class="btn btn-secondary">➕ Add Transaction</button>
+        </form>
+
+        <h3 style="font-size: 14px; margin-top: 15px; color: #555;">Entered Transactions:</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Description</th>
+                    <th>Paid By</th>
+                    <th>Amount</th>
+                    <th style="width: 80px;">Action</th>
+                </tr>
+            </thead>
+            <tbody id="txTableBody">
+                <tr><td colspan="4" style="text-align: center; color: #888;">No transactions added yet.</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- STEP 3: OPTIMIZE ACTION BUTTONS -->
+    <div style="display: flex; gap: 10px; margin-bottom: 20px;">
+        <button type="button" class="btn btn-primary btn-block" onclick="optimizeTransactions()">
+            Optimize Transactions
+        </button>
+        <button type="button" class="btn btn-secondary" style="width: 120px;" onclick="resetAll()">
+            Reset
+        </button>
+    </div>
+
+    <!-- STEP 4: RESULTS SECTION -->
+    <div id="resultsBox" class="results-box">
+        <h2 style="font-size: 18px; margin-bottom: 10px;">📊 Results & Output</h2>
+        
+        <!-- Net Amount Section -->
+        <div class="section-box">
+            <h2>1. Net Amount (net = paid - owed)</h2>
+            <p style="font-size: 13px; color: #666; margin-bottom: 8px;">
+                Positive (+) means person receives money. Negative (−) means person pays money.
+            </p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Person</th>
+                        <th>Net Balance</th>
+                    </tr>
+                </thead>
+                <tbody id="balancesTableBody">
+                   
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Optimized Settlements Section -->
+        <div class="section-box">
+            <h2>2. Final Optimized Settlements</h2>
+            <p style="font-size: 13px; color: #666; margin-bottom: 8px;">
+                Algorithm matched largest creditor with largest debtor until all net balances became 0:
+            </p>
+            <ul class="settlement-list" id="settlementsList">
+                
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        Settle your payments in the most optimized way
+    </footer>
+</div>
+
+<script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>

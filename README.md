@@ -163,7 +163,7 @@ SplitWyus/
 │
 └── static/
     ├── style.css
-    └── style2.css
+    
 ```
 
 > Update this structure if the final project contains additional files.
@@ -187,13 +187,13 @@ The following are required to run SplitWyus:
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY-NAME.git
+git clone https://github.com/parnasha2/SplitWyus
 ```
 
 ### 2. Open the project directory
 
 ```bash
-cd YOUR-REPOSITORY-NAME
+cd SplitWyus
 ```
 
 ### 3. Create a virtual environment
