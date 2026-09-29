@@ -152,21 +152,20 @@ The project applies several Python concepts:
 ## Project Structure
 
 ```text
-SplitWyus/
-│
+splitwise/
+├── .gitignore
 ├── app.py
-├── requirements.txt
 ├── README.md
-│
-├── templates/
-│   └── index.html
-│
-└── static/
-    ├── style.css
-    
+├── requirements.txt
+├── settlement.py
+├── static/
+│   ├── css/
+│   │   └── style.css
+│   └── js/
+│       └── app.js
+└── templates/
+        └── index.html
 ```
-
-> Update this structure if the final project contains additional files.
 
 ---
 
